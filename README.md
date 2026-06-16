@@ -19,11 +19,11 @@ API RESTful para gerenciamento de agendamentos locais, desenvolvida com o framew
 * `app/schemas.py`: Schemas de validação de dados com Pydantic.
 * `app/routers/`: Módulos de rotas isoladas da aplicação.
 
-## Como Executar o Projeto
+# Instalação e Execução
 
-1. Certifique-se de ter o Python instalado em sua máquina.
-2. pip install -r requirements.txt
-3. python -m uvicorn app.main:app --reload
-4. Ative o ambiente virtual:
 ```bash
-   .\venv\Scripts\activate
+.\venv\Scripts\activate
+pip install -r requirements.txt
+python -m uvicorn app.main:app --reload
+Após iniciar o servidor, a documentação interativa Swagger estará disponível no endereço local:
+http://127.0.0.1:8000/docs
